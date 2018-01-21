@@ -39,7 +39,7 @@ class Plugin extends PluginBase
                 'label'       => 'Facebook',
                 'description' => 'Manage Facebook settings.',
                 'category'    => 'Social Media',
-                'class'       => 'QN-Solutions\FacebookFeed\Models\Settings',
+                'class'       => 'QNSolutions\FacebookFeed\Models\Settings',
                 'order'       => 100
             ]
         ];
