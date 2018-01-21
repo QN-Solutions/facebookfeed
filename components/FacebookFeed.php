@@ -42,12 +42,14 @@ class FacebookFeed extends ComponentBase{
         ];
     }
 
-
 	public function info(){
+		$appId = Settings::instance()->get('fb_app_id');
+		$appSecret = Settings::instance()->get('app_secret');
+		$pageId = Settings::instance()->get('page_id');
 
 		FacebookSession::setDefaultApplication(
-			$this->appId, 
-			$this->appSecret
+			$appId, 
+			$appSecret
 		);
 		
 		try{
@@ -60,7 +62,7 @@ class FacebookFeed extends ComponentBase{
 			$request = new FacebookRequest(
 			  $session,
 			  'GET',
-			  '/'.$this->pageId.'/feed'
+			  '/'.$pageId.'/feed'
 			);
 
 			$result = [];
@@ -125,10 +127,7 @@ class FacebookFeed extends ComponentBase{
 	}
 
 	public function onRun(){
-		$this->appId = Settings::get('fb_app_id');
-		$this->appSecret = Settings::get('app_secret');
-		$this->pageId = Settings::get('page_id');
-
+		
 		$this->page['facebookfeed'] = $this->info();
 	}
 
