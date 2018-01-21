@@ -5,3 +5,4 @@
 1.10.1: Fixed FacebookSDKException handler (missing namespace import)
 1.10.2: Fixed how settings are fetched
 1.10.3: Fixed reference bug
+1.10.4: Fixed another reference bug

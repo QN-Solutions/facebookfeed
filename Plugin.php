@@ -27,7 +27,7 @@ class Plugin extends PluginBase
 
 	public function registerComponents(){
 		return [
-			'\QN-Solutions\FacebookFeed\Components\FacebookFeed' => 'facebookfeed'
+			'\QNSolutions\FacebookFeed\Components\FacebookFeed' => 'facebookfeed'
 		];
 	}
 
