@@ -1,12 +1,16 @@
 {
-    "name": "inkrement/facebookfeed",
+    "name": "qn-solutions/facebookfeed",
     "description": "Facebook Feed integration",
-    "homepage": "http://www.github.com/inkrement",
+    "homepage": "http://www.github.com/qn-solutions",
     "keywords": ["october", "cms", "facebook", "laravel", "feed"],
     "authors": [
         {
             "name": "Christian Hotz-Behofsits",
             "email": "chris.hotz.behofsits@gmail.com"
+        },
+        {
+            "name": "Christian Kuhn",
+            "email": "c.kuhn@qn-solutions.de"
         }
     ],
     "require": {

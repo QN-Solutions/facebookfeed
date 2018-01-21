@@ -1,4 +1,4 @@
-<?php namespace Inkrement\FacebookFeed;
+<?php namespace QNSolutions\FacebookFeed;
 
 use App;
 use System\Classes\PluginBase;
@@ -20,14 +20,14 @@ class Plugin extends PluginBase
         return [
             'name'        => 'FacebookFeed',
             'description' => 'Provides a Facebook feed import',
-            'author'      => 'Inkrement',
+            'author'      => 'QN-Solutions',
             'icon'        => 'icon-leaf'
         ];
     }
 
 	public function registerComponents(){
 		return [
-			'\Inkrement\FacebookFeed\Components\FacebookFeed' => 'facebookfeed'
+			'\QN-Solutions\FacebookFeed\Components\FacebookFeed' => 'facebookfeed'
 		];
 	}
 
@@ -39,7 +39,7 @@ class Plugin extends PluginBase
                 'label'       => 'Facebook',
                 'description' => 'Manage Facebook settings.',
                 'category'    => 'Social Media',
-                'class'       => 'Inkrement\FacebookFeed\Models\Settings',
+                'class'       => 'QN-Solutions\FacebookFeed\Models\Settings',
                 'order'       => 100
             ]
         ];

@@ -1,13 +1,13 @@
 <?php
 
-namespace Inkrement\FacebookFeed\Components;
+namespace QNSolutions\FacebookFeed\Components;
 
 use Cache;
 use Request;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 
-use Inkrement\FacebookFeed\Models\Settings;
+use QNSolutions\FacebookFeed\Models\Settings;
 
 use Facebook;
 use Facebook\FacebookSDKException;
