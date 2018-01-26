@@ -62,7 +62,7 @@ class FacebookFeed extends ComponentBase{
 			$request = new FacebookRequest(
 			  $session,
 			  'GET',
-			  '/'.$pageId.'/feed'
+			  '/'.$pageId.'/feed?fields=full_picture,description,message,link,picture,story,is_published,created_time,attachments{title,media,subattachments,type,url,target}'
 			);
 
 			$result = [];
@@ -78,10 +78,8 @@ class FacebookFeed extends ComponentBase{
 					// load only a limited number of posts (maxItems) 
 					if($this->property('maxItems') < $num++) break;
 
-
-					if (isset($post->object_id))
-						$post->image_link = $this->getPictureLink($post->object_id, $session);
-
+					if (isset($post->full_picture))
+							$post->image_link = $post->full_picture;
 					if (isset($post->message))
 						$post->short = substr ($post->message, 0, $this->property('maxDescription')).'...';
 					else
