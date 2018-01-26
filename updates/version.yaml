@@ -6,3 +6,4 @@
 1.10.2: Fixed how settings are fetched
 1.10.3: Fixed reference bug
 1.10.4: Fixed another reference bug
+1.10.5: Facebook request now fetches more information from graph database (full_picture, description, message, link, picture, story, published status, time of creation, attachments)
